@@ -1,0 +1,75 @@
+body {
+    width: 820dp;
+    height: auto;
+    font-family: "Exo 2";
+    color: #FFFFFF;
+    position: absolute;
+}
+
+#container {
+    display: block;
+    width: 820dp;
+    background-color: rgba(0, 0, 0, 210);
+    border: 1dp solid rgba(90, 180, 255, 110);
+    border-radius: 5dp;
+    padding: 8dp 10dp 8dp 10dp;
+}
+
+#title {
+    display: block;
+    font-size: 11dp;
+    font-weight: bold;
+    color: rgba(90, 180, 255, 255);
+    text-align: center;
+    margin-bottom: 4dp;
+}
+
+#header-row {
+    display: block;
+    width: 800dp;
+    background-color: rgba(90, 180, 255, 28);
+    padding: 2dp 0dp;
+    margin-bottom: 2dp;
+    border-bottom: 1dp solid rgba(90, 180, 255, 60);
+}
+
+#header-row span {
+    display: inline-block;
+    font-size: 9dp;
+    color: rgba(140, 195, 255, 220);
+    font-weight: bold;
+}
+
+.data-row {
+    display: block;
+    width: 800dp;
+    padding: 2dp 0dp;
+    border-bottom: 1dp solid rgba(255, 255, 255, 12);
+}
+
+.data-row span {
+    display: inline-block;
+    font-size: 10dp;
+    color: rgba(220, 235, 255, 210);
+}
+
+#summary-row {
+    display: block;
+    margin-top: 5dp;
+    padding-top: 4dp;
+    border-top: 1dp solid rgba(90, 180, 255, 80);
+    font-size: 10dp;
+    font-weight: bold;
+    color: rgba(255, 215, 70, 255);
+    text-align: center;
+}
+
+/* Column widths — must total ~800dp */
+.col-uid    { width: 55dp;  }
+.col-name   { width: 160dp; }
+.col-bp     { width: 65dp;  }
+.col-target { width: 160dp; }
+.col-active { width: 40dp;  }
+.col-using  { width: 100dp; }
+.col-max    { width: 100dp; }
+.col-ratio  { width: 100dp; }

@@ -1,0 +1,36 @@
+<rml id="builder_debug_widget">
+<head>
+    <title>Builder Debug</title>
+    <link type="text/rcss" href="builder_debug_widget.rcss" />
+</head>
+<body>
+    <div id="container" data-model="builder_debug_model">
+        <p id="title">⚙ BUILDER EFFICIENCY DEBUG — tick-rate</p>
+        <div id="header-row">
+            <span class="col-uid">UID</span>
+            <span class="col-name">BUILDER TYPE</span>
+            <span class="col-bp">BP</span>
+            <span class="col-target">TARGET</span>
+            <span class="col-active">ACT</span>
+            <span class="col-using">USING m/s</span>
+            <span class="col-max">MAX m/s</span>
+            <span class="col-ratio">EFF%</span>
+        </div>
+        <div id="rows" data-for="row : rows">
+            <div class="data-row">
+                <span class="col-uid">{{row.uid}}</span>
+                <span class="col-name">{{row.name}}</span>
+                <span class="col-bp">{{row.bp}}</span>
+                <span class="col-target">{{row.target}}</span>
+                <span class="col-active">{{row.active}}</span>
+                <span class="col-using">{{row.using}}</span>
+                <span class="col-max">{{row.max}}</span>
+                <span class="col-ratio">{{row.ratio}}</span>
+            </div>
+        </div>
+        <div id="summary-row">
+            <span>{{summary}}</span>
+        </div>
+    </div>
+</body>
+</rml>
